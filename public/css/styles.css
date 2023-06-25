@@ -1,0 +1,64 @@
+.container-fluid {
+    padding-top: 70px; 
+    padding-bottom: 70px;
+}
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+} 
+.navbar-nav li a:hover{
+    color: #1abc9c !important;
+}   
+.footer-padding { 
+    padding-bottom: 60px;
+}
+
+.footer {
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #1abc9c;
+}
+
+.footer p {
+    margin-top: 25px;
+    font-size: 12px;
+    color: #fff;
+}
+
+.composebtn{
+    position: fixed;
+    bottom: 90px;
+    right: 30px;
+    color: #fff;
+    box-shadow: 1px 1px 2px rgb(166, 166, 166);
+}
+
+.composebtn:hover{
+    transition: 0.3s ease;
+    box-shadow: 1px 1px 5px rgb(165, 165, 165);
+}
+.composebtn::after{
+    transition-delay: 0.5s;
+    color: #fff;
+    content: " Compose";
+    display: none;
+}
+.composebtn:hover::after {
+    display: inline;
+}
+.contact{
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
+    width:300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

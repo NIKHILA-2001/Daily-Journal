@@ -1,0 +1,17 @@
+<%- include("partials/header"); -%>
+
+<h1>HOME</h1>
+<p><%= homeContent %></p>
+<form action="/" method="post">
+    <% postContents.forEach(function(post){ %>
+        <h2><%= post.title %></h2>
+        <p>
+            <%= post.content.substring(0,100)+"..." %>
+            <a href="/post/<%= post.title %>">Read more</a>
+        </p>
+    <% }) %>
+    <button name="compose" class="composebtn btn btn-primary m-4 " type="submit">
+        <img src="images/penlogo.png" height="20" alt="compose">
+    </button>
+</form>
+<%- include("partials/footer"); -%>
